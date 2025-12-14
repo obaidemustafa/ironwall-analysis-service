@@ -1,0 +1,82 @@
+{
+  "timestamp": "2025-12-14T11:22:37.818362",
+  "system_tools": {
+    "file": {
+      "found": false,
+      "description": "libmagic/file utility",
+      "output": "Not found in PATH"
+    },
+    "binwalk": {
+      "found": false,
+      "description": "binwalk binary analysis",
+      "output": "Not found in PATH"
+    },
+    "strings": {
+      "found": true,
+      "description": "GNU strings utility",
+      "output": "GNU strings (GNU Binutils) 2.43.1\r"
+    },
+    "clamscan": {
+      "found": false,
+      "description": "ClamAV antivirus",
+      "output": "Not found in PATH"
+    }
+  },
+  "python_packages": {
+    "capstone": {
+      "found": false,
+      "description": "Disassembly engine",
+      "output": "Not installed"
+    },
+    "lief": {
+      "found": false,
+      "description": "Binary parsing (PE/ELF/Mach-O)",
+      "output": "Not installed"
+    },
+    "pefile": {
+      "found": false,
+      "description": "PE file parsing",
+      "output": "Not installed"
+    },
+    "elftools": {
+      "found": false,
+      "description": "ELF file parsing",
+      "output": "Not installed"
+    },
+    "networkx": {
+      "found": false,
+      "description": "Graph/CFG analysis",
+      "output": "Not installed"
+    }
+  },
+  "optional_components": {
+    "ghidra": {
+      "found": false,
+      "note": "Fallback to Capstone will be used"
+    },
+    "java": {
+      "found": true,
+      "output": "Found (no version output)"
+    },
+    "ghidra_bridge": {
+      "found": false,
+      "output": "Not installed"
+    }
+  },
+  "summary": {
+    "missing_system_tools": [
+      "file",
+      "binwalk",
+      "clamscan"
+    ],
+    "missing_python_packages": [
+      "capstone",
+      "lief",
+      "pefile",
+      "elftools",
+      "networkx"
+    ],
+    "status": "INCOMPLETE",
+    "on_windows": true
+  }
+}
